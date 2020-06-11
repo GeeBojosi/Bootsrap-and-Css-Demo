@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav {
+    background: darkslategrey;
+    padding: 20px;
+    /* margin-bottom: 20px; */
+}
+
+header nav a {
+    float: left;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+header section{
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 4.8rem 0;
+    background: url("imgs/header.jpeg");
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container h5 {
+    color: #000;
+    font-size: 2.9em;
+    font-weight: lighter;
+    margin-bottom: 25px;
+}
+
+.container .buttons {
+    display: flex; 
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container .buttons a {
+    text-decoration: none;
+    margin: 0 5px;
+    background: #28a745;
+    border-color: #28a745;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.container .buttons a:first-child {
+    background: #17a2b8;
+    border-color: #17a2b8;
+}
+.container-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    grid-auto-rows: minmax(200px, auto);
+    margin-bottom: 20px;
+}
+
+.container-grid div {
+    border: 1px grey solid;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    overflow: auto;
+}
+
+.container-grid .card-body {
+    border: none;
+    padding: 2px 16px;
+}
+
+.container-grid .card-body
+h3,
+p {
+    margin-bottom: 10px;
+}
+
+.container-grid div img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.container-grid .card-body a {
+    text-decoration: none;
+    padding: 5px;
+    border: 1px solid #28a745;
+    color: #28a745;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: .8em;
+}
+
+.container-grid .card-body a:nth-child(even) {
+    border: 1px solid #dc3545;
+    color: #dc3545;
+    
+}
+.container-grid .card-body a:hover:nth-child(even) {
+    background: #dc3545;
+    color: #fff;
+}
+
+.container-grid .card-body a:hover {
+    background: #28a745;
+    color: #fff;
+}
